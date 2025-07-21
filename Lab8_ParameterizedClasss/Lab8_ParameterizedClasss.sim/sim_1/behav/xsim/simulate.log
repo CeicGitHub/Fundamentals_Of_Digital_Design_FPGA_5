@@ -1,0 +1,14 @@
+Time resolution is 1 ps
+the value of var1 for object obj1 in post_randomize is:
+  7
+the value of var1 for object obj2 in post_randomize is:
+  24
+the value of var1 for object obj1 in post_randomize is:
+  1
+the value of var1 for object obj2 in post_randomize is:
+  24
+the value of var1 for object obj1 in post_randomize is:
+  3
+the value of var1 for object obj2 in post_randomize is:
+ 152
+$finish called at time : 0 fs : File "D:/Vivado/Team9_Lab8_Mod5/dv/tb.sv" Line 50
