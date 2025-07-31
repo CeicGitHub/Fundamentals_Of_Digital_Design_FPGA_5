@@ -12,16 +12,18 @@
 //**Revision: 01
 //**Additional Comments:
 
-module pwm_8bit_500hz #(
-    parameter CLK_FREQ_HZ = 50_000_000  //! Frecuencia del reloj del sistema en Hz 
-)(
+module pwm_8bit_500hz #( parameter CLK_FREQ_HZ = 50_000_000)  //! Frecuencia del reloj del sistema en Hz )
+
+(
     input  logic        clk,            //! Señal Del Reloj del Sistema
     input  logic        rst,            //! Señal De Reinicio Sincronico (Activo en alto)
     input  logic [7:0]  duty_cycle,     //! Señal ciclo de trabajo de PWM (0–255)
+
     output logic        pwm_out         //! Señal De Salida del PWM
 );
+    //* NOTA: Aqui no usamos bit [7:0] pwm_counter, por que si existiera un error de logica no podriamos detectar "X" por que bit no detecta "X".
 
-    //! Aqui se define el numero maximo de pasos del contados PWM (resolucion de 8-bit = 256 niveles)
+    //! Numero maximo de pasos del contados PWM (resolucion de 8-bit = 256 niveles)
     localparam int PWM_RESOLUTION   = 256; 
 
     //! Aqui se calcula cuantos ciclos de reloj se requieren por cada paso del contador PWM
@@ -42,8 +44,10 @@ module pwm_8bit_500hz #(
     always_ff @(posedge clk or posedge rst) begin
         if (rst) begin
             //! Si se activa "reset", se reinician ambos contadores
+            //? tiempo ejecución
             tick_counter <= 0;
             pwm_counter  <= 0;
+            //? tiempo ejecución
         end else begin
             if (tick_counter == TICKS_PER_STEP - 1) begin
                 //! Cuando se alcanza el número de ticks por paso, se reinicia el "contador de ticks"

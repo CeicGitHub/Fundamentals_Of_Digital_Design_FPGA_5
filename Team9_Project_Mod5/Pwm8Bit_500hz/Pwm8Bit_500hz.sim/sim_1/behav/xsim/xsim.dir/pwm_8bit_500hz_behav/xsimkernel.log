@@ -1,7 +1,7 @@
-Running: xsim.dir/pwm_8bit_500hz_behav/xsimk.exe -simmode gui -wdb pwm_8bit_500hz_behav.wdb -simrunnum 0 -socket 51077
+Running: xsim.dir/pwm_8bit_500hz_behav/xsimk.exe -simmode gui -wdb pwm_8bit_500hz_behav.wdb -simrunnum 0 -socket 53451
 Design successfully loaded
-Design Loading Memory Usage: 27196 KB (Peak: 27196 KB)
-Design Loading CPU Usage: 842 ms
+Design Loading Memory Usage: 26480 KB (Peak: 26480 KB)
+Design Loading CPU Usage: 858 ms
 Simulation completed
-Simulation Memory Usage: 27968 KB (Peak: 27968 KB)
-Simulation CPU Usage: 890 ms
+Simulation Memory Usage: 27300 KB (Peak: 27300 KB)
+Simulation CPU Usage: 968 ms
