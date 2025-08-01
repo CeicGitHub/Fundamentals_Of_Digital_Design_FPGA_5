@@ -1,0 +1,10 @@
+0.7
+2020.2
+Nov  8 2024
+22:36:57
+D:/Desktop/Alonso_QuartusLabs/modulo5/Equipo 13/RTL/bcd_to_7seg.sv,1751601000,systemVerilog,,D:/Desktop/Alonso_QuartusLabs/modulo5/Equipo 13/RTL/clk_div.sv,,bcd_to_7seg,,uvm,,,,,,
+D:/Desktop/Alonso_QuartusLabs/modulo5/Equipo 13/RTL/clk_div.sv,1751601000,systemVerilog,,D:/Desktop/Alonso_QuartusLabs/modulo5/Equipo 13/RTL/digital_clock.sv,,clk_div,,uvm,,,,,,
+D:/Desktop/Alonso_QuartusLabs/modulo5/Equipo 13/RTL/digital_clock.sv,1751601000,systemVerilog,,D:/Desktop/Alonso_QuartusLabs/modulo5/Equipo 13/digital_clock/digital_clock.srcs/sim_1/new/tb_digital_clock.sv,,digital_clock,,uvm,,,,,,
+D:/Desktop/Alonso_QuartusLabs/modulo5/Equipo 13/digital_clock/digital_clock.sim/sim_1/behav/xsim/glbl.v,1724786425,verilog,,,,glbl,,uvm,,,,,,
+D:/Desktop/Alonso_QuartusLabs/modulo5/Equipo 13/digital_clock/digital_clock.srcs/sim_1/new/tb_digital_clock.sv,1753565501,systemVerilog,,,,tb_digital_clock,,uvm,,,,,,
+D:/Desktop/Alonso_QuartusLabs/modulo5/bcd_assertions_tb.sv,1752023696,systemVerilog,,,,bcd_assertions_tb,,uvm,,,,,,

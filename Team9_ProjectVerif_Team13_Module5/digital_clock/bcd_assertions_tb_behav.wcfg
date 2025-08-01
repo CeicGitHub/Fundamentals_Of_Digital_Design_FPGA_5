@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_digital_clock_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_digital_clock" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="1,003.475 ns"></ZoomStartTime>
+      <ZoomEndTime time="2,297.476 ns"></ZoomEndTime>
+      <Cursor1Time time="10.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="109"></NameColumnWidth>
+      <ValueColumnWidth column_width="72"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="14" />
+   <wvobject fp_name="/tb_digital_clock/uut/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_digital_clock/uut/rstn" type="logic">
+      <obj_property name="ElementShortName">rstn</obj_property>
+      <obj_property name="ObjectShortName">rstn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_digital_clock/uut/start_stop" type="logic">
+      <obj_property name="ElementShortName">start_stop</obj_property>
+      <obj_property name="ObjectShortName">start_stop</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_digital_clock/uut/hex0" type="array">
+      <obj_property name="ElementShortName">hex0[6:0]</obj_property>
+      <obj_property name="ObjectShortName">hex0[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_digital_clock/uut/hex1" type="array">
+      <obj_property name="ElementShortName">hex1[6:0]</obj_property>
+      <obj_property name="ObjectShortName">hex1[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_digital_clock/uut/hex2" type="array">
+      <obj_property name="ElementShortName">hex2[6:0]</obj_property>
+      <obj_property name="ObjectShortName">hex2[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_digital_clock/uut/hex3" type="array">
+      <obj_property name="ElementShortName">hex3[6:0]</obj_property>
+      <obj_property name="ObjectShortName">hex3[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_digital_clock/uut/clk_signal" type="logic">
+      <obj_property name="ElementShortName">clk_signal</obj_property>
+      <obj_property name="ObjectShortName">clk_signal</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_digital_clock/uut/seconds" type="array">
+      <obj_property name="ElementShortName">seconds[5:0]</obj_property>
+      <obj_property name="ObjectShortName">seconds[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_digital_clock/uut/minutes" type="array">
+      <obj_property name="ElementShortName">minutes[5:0]</obj_property>
+      <obj_property name="ObjectShortName">minutes[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_digital_clock/uut/sec_units" type="array">
+      <obj_property name="ElementShortName">sec_units[3:0]</obj_property>
+      <obj_property name="ObjectShortName">sec_units[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_digital_clock/uut/sec_tens" type="array">
+      <obj_property name="ElementShortName">sec_tens[3:0]</obj_property>
+      <obj_property name="ObjectShortName">sec_tens[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_digital_clock/uut/min_units" type="array">
+      <obj_property name="ElementShortName">min_units[3:0]</obj_property>
+      <obj_property name="ObjectShortName">min_units[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_digital_clock/uut/min_tens" type="array">
+      <obj_property name="ElementShortName">min_tens[3:0]</obj_property>
+      <obj_property name="ObjectShortName">min_tens[3:0]</obj_property>
+   </wvobject>
+</wave_config>
