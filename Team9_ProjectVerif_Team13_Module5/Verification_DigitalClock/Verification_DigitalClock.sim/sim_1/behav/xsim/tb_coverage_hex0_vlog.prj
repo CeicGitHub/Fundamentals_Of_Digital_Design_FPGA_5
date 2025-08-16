@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../../rtl/bcd_to_7seg.sv" \
+"../../../../../rtl/clk_div.sv" \
+"../../../../../rtl/digital_clock.sv" \
+"../../../../../dv_designverification/tb_coverage_hex0.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,4 @@
+colocar aserciones concurrentes que tienen 1 ciclo de reloj.
+
+1 asercion que diga que ningun digito puede ser mayor a 9.
+

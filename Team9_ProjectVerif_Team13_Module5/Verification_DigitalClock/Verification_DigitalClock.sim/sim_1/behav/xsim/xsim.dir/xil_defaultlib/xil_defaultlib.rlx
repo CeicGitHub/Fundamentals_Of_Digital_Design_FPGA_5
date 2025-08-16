@@ -1,0 +1,11 @@
+0.7
+2020.2
+Nov  8 2024
+22:36:57
+D:/Vivado/Team9_ProjectVerif_Team13_Module5/Verification_DigitalClock/Verification_DigitalClock.sim/sim_1/behav/xsim/glbl.v,1724786425,verilog,,,,glbl,,uvm,,,,,,
+D:/Vivado/Team9_ProjectVerif_Team13_Module5/dv_designverification/tb_bcd_to_7seg_tableII.sv,1755290604,systemVerilog,,,,tb_bcd_to_7seg_tableII,,uvm,,,,,,
+D:/Vivado/Team9_ProjectVerif_Team13_Module5/dv_designverification/tb_check_hex0_every2cycles.sv,1755292101,systemVerilog,,,,tb_check_hex0_every2cycles,,uvm,,,,,,
+D:/Vivado/Team9_ProjectVerif_Team13_Module5/dv_designverification/tb_coverage_hex0.sv,1755312930,systemVerilog,,,,tb_coverage_hex0,,uvm,,,,,,
+D:/Vivado/Team9_ProjectVerif_Team13_Module5/rtl/bcd_to_7seg.sv,1754029080,systemVerilog,,D:/Vivado/Team9_ProjectVerif_Team13_Module5/rtl/clk_div.sv,,bcd_to_7seg,,uvm,,,,,,
+D:/Vivado/Team9_ProjectVerif_Team13_Module5/rtl/clk_div.sv,1754029080,systemVerilog,,D:/Vivado/Team9_ProjectVerif_Team13_Module5/rtl/digital_clock.sv,,clk_div,,uvm,,,,,,
+D:/Vivado/Team9_ProjectVerif_Team13_Module5/rtl/digital_clock.sv,1754029080,systemVerilog,,D:/Vivado/Team9_ProjectVerif_Team13_Module5/dv_designverification/tb_coverage_hex0.sv,,digital_clock,,uvm,,,,,,
