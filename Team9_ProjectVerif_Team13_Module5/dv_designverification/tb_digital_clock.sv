@@ -56,5 +56,47 @@ module tb_digital_clock;  // Módulo de prueba para el módulo digital_clock
 
         $finish;               // Finaliza la simulación
     end
+    
+    //todo: checker sin sva: congelamiento durante la pausa
+
+logic [5:0] seconds_snap, minutes_snap;
+logic [6:0] hex0_snap, hex1_snap, hex2_snap, hex3_snap;
+logic in_pause;
+
+// Detecta caída a pausa y toma snapshot
+always @(posedge uut.clk_signal or negedge rstn) begin
+  if (!rstn) begin
+    in_pause     <= 1'b0;
+    seconds_snap <= '0;
+    minutes_snap <= '0;
+    hex0_snap    <= '0;
+    hex1_snap    <= '0;
+    hex2_snap    <= '0;
+    hex3_snap    <= '0;
+  end else begin
+    // entrando a pausa
+    if (!start_stop && !in_pause) begin
+      in_pause     <= 1'b1;
+      seconds_snap <= uut.seconds;
+      minutes_snap <= uut.minutes;
+      hex0_snap    <= hex0;
+      hex1_snap    <= hex1;
+      hex2_snap    <= hex2;
+      hex3_snap    <= hex3;
+    end
+    // saliendo de pausa
+    if (start_stop && in_pause)
+      in_pause <= 1'b0;
+
+    // Mientras esté en pausa, verificar que nada cambie
+    if (in_pause) begin
+      if (uut.seconds !== seconds_snap || uut.minutes !== minutes_snap)
+        $error("[PAUSE] seconds/minutes cambiaron en pausa: got %0d:%0d, exp %0d:%0d",
+               uut.minutes, uut.seconds, minutes_snap, seconds_snap);
+      if ({hex3,hex2,hex1,hex0} !== {hex3_snap,hex2_snap,hex1_snap,hex0_snap})
+        $error("[PAUSE] hex* cambió en pausa");
+    end
+  end
+end
 
 endmodule

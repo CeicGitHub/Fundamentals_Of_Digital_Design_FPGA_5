@@ -3,7 +3,8 @@ sv xil_defaultlib  \
 "../../../../../rtl/bcd_to_7seg.sv" \
 "../../../../../rtl/clk_div.sv" \
 "../../../../../rtl/digital_clock.sv" \
-"../../../../../dv_designverification/tb_coverage_hex0.sv" \
+"../../../../../dv_designverification/tb_overflow_sec_units.sv" \
+"../../../../../dv_designverification/tb_digital_clock.sv" \
 
 # compile glbl module
 verilog xil_defaultlib "glbl.v"

@@ -1,11 +1,12 @@
 Vivado Simulator v2024.2.0
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_coverage_hex0_behav xil_defaultlib.tb_coverage_hex0 xil_defaultlib.glbl -log elaborate.log 
+Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_digital_clock_behav xil_defaultlib.tb_digital_clock xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
 Completed static elaboration
+WARNING: [XSIM 43-4127] File "D:/Vivado/Team9_ProjectVerif_Team13_Module5/dv_designverification/tb_overflow_sec_units.sv" Line 23 : The "System Verilog Cover" is not supported yet for simulation. The statement will be ignored.
 Starting simulation data flow analysis
 WARNING: [XSIM 43-4099] "D:/Vivado/Team9_ProjectVerif_Team13_Module5/rtl/digital_clock.sv" Line 1. Module digital_clock doesn't have a timescale but at least one module in design has a timescale.
 WARNING: [XSIM 43-4099] "D:/Vivado/Team9_ProjectVerif_Team13_Module5/rtl/clk_div.sv" Line 1. Module clk_div doesn't have a timescale but at least one module in design has a timescale.
@@ -23,7 +24,8 @@ Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
 Compiling module xil_defaultlib.clk_div
 Compiling module xil_defaultlib.bcd_to_7seg
+Compiling module xil_defaultlib.sec_units_overflow_sva
 Compiling module xil_defaultlib.digital_clock
-Compiling module xil_defaultlib.tb_coverage_hex0
+Compiling module xil_defaultlib.tb_digital_clock
 Compiling module xil_defaultlib.glbl
-Built simulation snapshot tb_coverage_hex0_behav
+Built simulation snapshot tb_digital_clock_behav
